@@ -36,12 +36,14 @@ public class EmployeeService {
     }
 
 
-    public Employee createOrUpdateEmployee(Employee employee) {
+    public Employee createOrUpdateEmployee() {
+        Employee employee1 = map();
 
-            return employeeRepository.save(employee);
+        return employeeRepository.save(employee1);
 
-        }
+
     }
+}
 
 
 

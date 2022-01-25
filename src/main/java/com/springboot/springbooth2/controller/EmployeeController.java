@@ -14,13 +14,10 @@ public class EmployeeController {
     private EmployeeService employeeService;
 
     @RequestMapping(path = "/createEmployee", method = RequestMethod.POST)
-    public Employee createOrUpdateEmployee(@RequestBody Employee employee) {
+    public Employee createOrUpdateEmployee() {
 
 
-        return employeeService.createOrUpdateEmployee(employee);
-
-
-
+        return employeeService.createOrUpdateEmployee();
 
 
     }
